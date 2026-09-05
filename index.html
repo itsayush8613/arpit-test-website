@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ARPIT TEST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-glow glow-purple"></div>
+    <div class="background-glow glow-cyan"></div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <!-- Header -->
+                <div class="header-section">
+                    <div class="moai-emoji">🗿</div>
+                    <h1 class="main-title">
+                        <span class="title-letter">THE</span>
+                        <span class="title-letter gradient-letter">ARPIT</span>
+                        <span class="title-letter">TEST</span>
+                    </h1>
+                    <p class="subtitle">Answer honestly.</p>
+                    <p class="description">There are absolutely no consequences.</p>
+                    <div class="eyes-emoji">👀</div>
+                </div>
+
+                <!-- Quiz Content -->
+                <div class="quiz-container">
+                    <!-- Question 1 -->
+                    <div class="question-slide active" data-question="1">
+                        <h2 class="question-text">Do you like Arpit? ��</h2>
+                        <div class="button-group">
+                            <button class="btn btn-yes" data-answer="yes">YES 😎</button>
+                            <button class="btn btn-no" data-answer="no">NO 💀</button>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question-slide" data-question="2">
+                        <h2 class="question-text">Would you trust Arpit with your Spotify password? 🔐</h2>
+                        <div class="button-group">
+                            <button class="btn btn-yes" data-answer="yes">YES 😎</button>
+                            <button class="btn btn-no" data-answer="no">NO 💀</button>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="question-slide" data-question="3">
+                        <h2 class="question-text">Is Arpit cool asf? 😎</h2>
+                        <div class="button-group">
+                            <button class="btn btn-yes" data-answer="yes">YES 😎</button>
+                            <button class="btn btn-no" data-answer="no">NO 💀</button>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="question-slide" data-question="4">
+                        <h2 class="question-text">Does Arpit deserve a Grammy for his music taste? 🏆</h2>
+                        <div class="button-group">
+                            <button class="btn btn-yes" data-answer="yes">YES 😎</button>
+                            <button class="btn btn-no" data-answer="no">NO 💀</button>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="question-slide" data-question="5">
+                        <h2 class="question-text">Is Arpit's Spotify playlist better than yours?? 🎧</h2>
+                        <div class="button-group">
+                            <button class="btn btn-yes" data-answer="yes">YES 😎</button>
+                            <button class="btn btn-no" data-answer="no">NO 💀</button>
+                        </div>
+                    </div>
+
+                    <!-- Results Screen -->
+                    <div class="question-slide results-screen" data-question="results">
+                        <div class="trophy-emoji">🏆</div>
+                        <h2 class="results-title">YOU SURVIVED.</h2>
+                        <p class="results-text">YOU FOUGHT THE SPOTIFY BUTTON.</p>
+                        <div class="skull-emoji">💀</div>
+                        <p class="results-stats" id="stats-yes">You tried to click YES <span id="yes-count">0</span> time(s).</p>
+                        <p class="results-text">But Arpit's playlist remains undefeated.</p>
+                        <div class="music-emoji">🎧</div>
+                        <button class="btn btn-restart">TAKE IT AGAIN 🔄</button>
+                    </div>
+                </div>
+
+                <!-- Question Counter -->
+                <div class="question-counter" id="counter">Question 1 / 5</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
